@@ -1,0 +1,254 @@
+body {
+    background-color: rgb(53, 53, 53);
+    margin: 0;
+}
+
+main {
+    text-align: center;
+}
+
+.Painel_Inicial {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(212, 158, 10);
+    border-radius: 8px; 
+    font-size: 20px;
+    padding: 10px 20px;
+}
+
+.Painel_Inicial h1{
+    text-align: center;
+    margin: 0;
+    flex-grow: 1;
+    color: rgb(255, 255, 255);
+}
+
+#Menu_Vertical {
+    width: 100%;
+    background-color: #636060; 
+    padding: 10px 0;
+    box-sizing: border-box;
+}
+
+#Menu_Vertical ul {
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+#Menu_Vertical ul li a {
+    display: inline-block;
+    text-decoration: none; 
+    color: #333; 
+    padding: 10px 20px;
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+#Menu_Vertical ul li a:hover {
+    background-color: rgb(67, 67, 197); 
+    color: white; 
+}
+
+.capafilme {
+    display: flex;
+    
+    /* MUDANÇA PRINCIPAL: Distribui o espaço uniformemente e elimina o vazio na direita */
+    justify-content: space-between; 
+    
+    /* Se a tela diminuir muito, esse gap ainda garante uma distância mínima */
+    gap: 15px; 
+    
+    padding: 20px 10px;
+    box-sizing: border-box;
+    width: 100%;
+    align-items: center;
+    
+    /* Remove a quebra de linha e esconde barras se você optou por deixar tudo estático */
+    flex-wrap: nowrap;
+    overflow: hidden; 
+}
+
+.capafilme img {
+    width: 165px;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.capafilme img:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.65);
+    position: relative;
+    z-index: 10;
+}
+
+.capafilme::-webkit-scrollbar {
+    display: none;
+}
+
+.capafilme {
+    -ms-overflow-style: none; 
+    scrollbar-width: none;  
+}
+
+.painel2 {
+    text-align: center;
+    align-items: center;
+    background-color: rgb(120, 120, 120);
+    padding: 5px 5px;
+    border-radius: 8px; 
+}
+
+.titulo {
+    text-align: center;
+    font-size: 28px;
+    color: rgb(255, 255, 255);
+}
+
+#titulofilme {
+    text-align: left;
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    padding-left: 10px; 
+}
+
+.informacoes{
+    color: white;
+}
+
+.informacoesfilme {
+    display: flex;
+    color: white;
+}
+
+
+.informacoes {
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+
+.informacoesfilme {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px;              
+    padding: 20px;
+    flex-wrap: wrap;      
+}
+
+
+.card-filme {
+    flex: 1;
+    min-width: 240px; 
+    max-width: 310px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.card-filme h2 {
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 12px;
+    text-align: center;
+    color: rgb(212, 158, 10);
+}
+
+.card-filme p {
+    font-size: 16px;
+    line-height: 1.7;
+    text-align: justify;
+    margin-bottom: 20px;
+    flex-grow: 1;            
+}
+
+.card-filme a {
+    font-size: 14px;
+    color: #4da6ff;          
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid #4da6ff;
+    padding: 10px 14px;
+    border-radius: 4px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.card-filme a:hover {
+    background-color: #4da6ff;
+    color: black;
+}
+
+
+.center {
+    text-align: center;
+}
+
+.container-trailers {
+    padding: 30px 20px;
+    color: white;
+}
+
+.container-trailers h2 {
+    font-size: 26px;
+    margin-bottom: 25px;
+    color: #fff;
+}
+
+.lista-trailers {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 1000px;
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); 
+    gap: 16px;    
+}
+
+.lista-trailers li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: #444;     
+    
+    padding: 18px 25px;
+    border-radius: 8px;
+    border: 1px solid #555;
+    text-align: center;
+    
+    transition: all 0.3s ease-in-out; 
+}
+
+.lista-trailers li a:hover {
+    background-color: rgb(212, 158, 10); 
+    color: black;                        
+    border-color: rgb(212, 158, 10);
+    
+    transform: translateY(-4px) scale(1.04); 
+    box-shadow: 0px 8px 20px rgba(212, 158, 10, 0.4); 
+}
+
+.sobresite{
+    color: #fff;
+}
